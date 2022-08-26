@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Corbin Crawfords</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4229a7500a.js" crossorigin="anonymous"></script>
+</head>
+<body class="App">
+
+    <!-- Fixed Header -->
+    <div class="fixed-header">
+        <a href="#logo" class="logo">Corbin <br /> Crawford</a>
+        <ul>
+            <li><a href="#" class="style-2" data-replace="Home"><span>Home</span></a></li>
+            <li><a href="#projects" class="style-2" data-replace="Projects"><span>Projects</span></a></li>
+            <li><a href="#edu" class="style-2" data-replace="Education"><span>Education</span></a></li>
+            <li><a href="#contact" class="style-2" data-replace="Contact"><span>Contact</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Side Image -->
+    <div class="photo-container"></div>
+
+
+
+
+    <div class='content-container'>
+
+        <!-- {/* <div class="mobile-top-photo">
+            <img src={ require("../assets/me-boomerjo.jpeg") } />
+        </div> */} -->
+
+        <div class='section intro-section'>
+            <h1 class='intro-name'>Corbin Crawford</h1>
+            <!-- {/*  Typewriter Container */} -->
+            <div class="typed-container">    
+                <p class="typed-out">I am a Full-Stack Developer</p>
+            </div>
+
+            <p class="content-text-style-1 width80 line1-3" id='intro-text'>
+                Welcome! 
+                <br />
+                <br />
+                Thanks for visiting! I am a passionate, highly motivated developer and tech enthusiast
+                consistently learning new technologies to strengthening my skillset.
+                <br />
+                My Github is where you can find my most recent projects but here you will see a showcase of projects displaying my various skills.
+            </p>
+
+            <div class="home-btn-container">
+                <div class="contact-me-button">
+                    <button class="contact-btn">
+                        <a href="#contact" class="contact-btn-text">Contact Me &gt;</a>
+                    </button>
+                </div>
+                <!-- {/* <div class="contact-me-button">
+                    <button class="contact-btn">
+                        <a href="#resume" class="contact-btn-text">resume &darr;</a>
+                    </button>
+                </div> */} -->
+            </div>
+
+        </div>
+
+
+        <div class="section body-section">
+            <div class='section-top'>
+                <h1 class='section-title'>About Me</h1>
+                <p class="section-bar"></p>
+            </div>
+
+            <div class="about-me-container">
+                <p>Currently an active student at Coding Dojo.</p>
+
+                <br />
+
+                <p class="about-me-text"> My journey in tech and  entrepreneurship went full swing when I decided  to launch a mobile device repair service in my rural Kansas town.
+                <br />
+                I graduated high school and found myself studying cyber security, here I learned how to utilize security services such as Wireshark, Metasploit, Nmap, etc. </p>
+                <br /> 
+
+                <p class="shadow-text"> It's very hard to find me away from a computer but when you do it's usually my dogs or nature calling. </p>
+
+                <br />
+                <br />
+
+                <div class="about-cards-container">
+
+                    <div class="about-row">
+                        <div class="about-card">
+                            <p class="about-card-text">Location: &nbsp; Colorado, USA </p>
+                        </div>
+
+                        <div class="about-card">
+                            <p class="about-card-text">Hobby: &nbsp; Kayaking </p>
+                        </div>
+                    </div>
+
+                    <div class="about-row">
+                        <div class="about-card">
+                            <p class="about-card-text">Animals: &nbsp; Two Dogs </p>
+                        </div>
+
+                        <div class="about-card">
+                            <p class="about-card-text">Freelance: &nbsp; <span class="available"> Available </span></p>
+                        </div>
+                    </div>
+
+                    <span id='projects'></span>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- {/* PORTFOLIO */} -->
+        <div class='section body-section'>
+            <div class='section-top'>
+                <h1 class='section-title'>Projects</h1>
+                <p class="section-bar"></p>
+            </div>
+            
+            <div class="project-container">
+
+                <!-- {/* ========================================================= */} -->
+                <!-- {/* PROJECT ONE DESKTOP */} -->
+                <div class="project-card-container desktop-project">
+
+                    <div class="project-card">
+                        
+                        
+                        <div class='image-filler dojoimg'></div>
+
+
+                        <div class="project-card-info-right">
+                            <p class="project-title">Dojoneer</p>
+                            <p class="project-description">
+                                A study dojo for users to maintain productivity! It includes a notepad, todo list that is stored in local storage, a task-timer, and lofi radio that is embed via Youtube. All components are draggable and interactive to the user.
+                            </p>
+                            <div class="proj-learn-more-container">
+                                <button id="onebuzz" class="hvr-buzz-out" onclick="ProjOne()">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="myDIV" id="divone">
+                        <div class="project-card-dropdown">
+                            <div class="dropdown-left">
+                                <p class="dropdown-title">Technologies Utilized</p>
+                                <div class="dropdown-technologies">
+                                    <span class="technologies-pod">HTML</span>
+                                    <span class="technologies-pod">CSS3</span>
+                                    <span class="technologies-pod">React.js</span>
+                                    <span class="technologies-pod">Youtube Radio</span>
+                                    <span class="technologies-pod">AWS</span>
+                                    <span class="technologies-pod">Github Collab</span>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-right">
+                                <p class="dropdown-title">Check it out</p>
+                                <div class="dropdown-project-links">
+                                    <ul class='dropdown-actions'>
+                                        <li>
+                                            <a href="#" class="hvr-icon-buzz">
+                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
+                                            </a>
+                                        </li>
+
+                                        <!-- <li>
+                                            <a href="#" class="hvr-icon-buzz">
+                                                Visit Project <i class="fa fa-solid fa-globe hvr-icon"></i>
+                                            </a>
+                                        </li> -->
+
+                                        <!-- {/* <li><a href="#DEMO">Demo</a></li> */} -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                </div>
+
+                <!-- {/* ========================================================= */} -->
+                <!-- {/* PROJECT ONE MOBILE */} -->
+                <div class="project-card-container mobile-project">
+                    <div class="project-card">
+
+                        <div class="project-card-info-left">
+                            <p class="project-title">Dojoneer</p>
+
+                            <!-- {/* IMAGE FOR PROJECT ON MOBILE*/} -->
+                            <div class="mobile-project-dojo"></div>
+
+                            <p class="project-description">
+                                A study dojo for users to maintain productivity! It includes a notepad, todo list that is stored in local storage, a task-timer, and lofi radio that is embed via Youtube. All components are draggable and interactive to the user.
+                            </p>
+                            <div class="proj-learn-more-container learn-more-left">
+                                <button id="twobuzzmobile" class="hvr-buzz-out" onclick="ProjOneMobile()"">Learn more</button>
+                            </div>
+                        </div>
+
+                        <div class='image-filler right-img dojoimg'></div>
+                    </div>
+
+                    <div class="myDIV" id="divone-mobile">
+                        <div class="project-card-dropdown">
+                            <div class="dropdown-left">
+                                <p class="dropdown-title">Technologies Utilized</p>
+                                <div class="dropdown-technologies">
+                                    <span class="technologies-pod">HTML</span>
+                                    <span class="technologies-pod">CSS3</span>
+                                    <span class="technologies-pod">React.js</span>
+                                    <span class="technologies-pod">Youtube Radio</span>
+                                    <span class="technologies-pod">AWS</span>
+                                    <span class="technologies-pod">Github Collab</span>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-right">
+                                <p class="dropdown-title">Check it out</p>
+                                <div class="dropdown-project-links">
+                                    <ul class='dropdown-actions'>
+                                        <li>
+                                            <a href="#" class="hvr-icon-buzz">
+                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
+                                            </a>
+                                        </li>
+                                        
+                                        <!-- {/* Will be two view a small video demo, in order to run will have to put
+                                         some instructions in the ReadMe on Github */}
+
+                                        {/* <li>
+                                            <a href="#" class="hvr-icon-buzz">
+                                                Visit Project <i class="fa fa-solid fa-globe hvr-icon"></i>
+                                            </a>
+                                        </li> */} -->
+
+                                        <!-- {/* <li><a href="#DEMO">Demo</a></li> */} -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+                <!-- {/* ========================================================= */} -->
+                <!-- {/* PROJECT TWO */} -->
+                <div class="project-card-container">
+                    <div class="project-card">
+
+                        <div class="project-card-info-left">
+                            <p class="project-title">Plant Stand</p>
+
+                            <!-- {/* IMAGE FOR PROJECT ON MOBILE*/} -->
+                            <div class="mobile-project-image"></div>
+
+
+                            <p class="project-description">
+                                A simple but elagant social platform for plant lovers. It allows users to create profiles, showcase their plantstand, and join in communities that are created by fellow users.
+                            </p>
+                            <div class="proj-learn-more-container learn-more-left">
+                                <button id="twobuzz" class="hvr-buzz-out" onclick="ProjTwo()">Learn more</button>
+                            </div>
+                        </div>
+
+                        <div class='image-filler right-img'></div>
+                    </div>
+
+                    <div class="myDIV" id="divtwo">
+                        <div class="project-card-dropdown">
+                            <div class="dropdown-left">
+                                <p class="dropdown-title">Technologies Utilized</p>
+                                <div class="dropdown-technologies">
+                                    <span class="technologies-pod">HTML</span>
+                                    <span class="technologies-pod">CSS3</span>
+                                    <span class="technologies-pod">Jinja2</span>
+                                    <span class="technologies-pod">SQL</span>
+                                    <span class="technologies-pod">Flask</span>
+                                    <span class="technologies-pod">AWS</span>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-right">
+                                <p class="dropdown-title">Check it out</p>
+                                <div class="dropdown-project-links">
+                                    <ul class='dropdown-actions'>
+                                        <li>
+                                            <a href="#" class="hvr-icon-buzz">
+                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
+                                            </a>
+                                        </li>
+                                        
+                                        <!-- {/* Will be two view a small video demo, in order to run will have to put
+                                         some instructions in the ReadMe on Github */}
+
+                                        {/* <li>
+                                            <a href="#" class="hvr-icon-buzz">
+                                                Visit Project <i class="fa fa-solid fa-globe hvr-icon"></i>
+                                            </a>
+                                        </li> */} -->
+
+                                        <!-- {/* <li><a href="#DEMO">Demo</a></li> */} -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- {/* ========================================================= */} -->
+                <!-- {/* PROJECT THREE DESKTOP */} -->
+                <div class="project-card-container desktop-project">
+
+                    <div class="project-card" id='urcs-container'>
+                        
+                        
+                        <div class='image-filler downimg'></div>
+
+
+                        <div class="project-card-info-right">
+                            <p class="project-title">UrCheatSheet</p>
+                            <p class="project-description">
+                                Being rewritten in vanilla Javascript to be a small platform to reference and understand data structures and algorithmic apporaches better. Vanilla JS allows for affordable hosting.
+                            </p>
+                            <div class="proj-learn-more-container">
+                                <button id="onebuzz" class="hvr-buzz-out" onclick="ProjThree()">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="myDIV" id="divthree">
+                        <div class="project-card-dropdown">
+                            <div class="dropdown-left">
+                                <p class="dropdown-title">Technologies Utilized</p>
+                                <div class="dropdown-technologies">
+                                    <span class="technologies-pod">HTML</span>
+                                    <span class="technologies-pod">CSS3</span>
+                                    <span class="technologies-pod">Javascript</span>
+                                    <span class="technologies-pod">CodeMirror</span>
+                                    <span class="technologies-pod">Github Pages</span>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-right">
+                                <p class="dropdown-title">Check it out</p>
+                                <div class="dropdown-project-links">
+                                    <ul class='dropdown-actions'>
+                                        <li>
+                                            <a href="#" class="hvr-icon-buzz">
+                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
+                                            </a>
+                                        </li>
+
+                                        <!-- <li>
+                                            <a href="#" class="hvr-icon-buzz">
+                                                Visit Project <i class="fa fa-solid fa-globe hvr-icon"></i>
+                                            </a>
+                                        </li> -->
+
+                                        <!-- {/* <li><a href="#DEMO">Demo</a></li> */} -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- {/* Edu ID for scroll */} -->
+                <span id='edu'></span>
+
+            </div>
+        </div>
+        <!-- {/* PORTFOLIO END */} -->
+
+
+        <!-- {/************************************************** /} -->
+        <!-- {/* EDUCATION */} -->
+        <div class="section body-section">
+            <div class='section-top'>
+                <h1 class='section-title'>Education</h1>
+                <p class="section-bar"></p>
+            </div>
+
+            <div class='edu-container'>
+                <!-- {/* CODING DOJO */} -->
+                <div class="edu-card-container">
+                    <div class="edu-card" id='dojoCard' onclick="DojoCard()">
+                        <p class="institution">Coding Dojo <span class="year">( 2022 )</span></p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                        <div class="edu-description eduDrop" id='dojoDrop'>
+                            <ul class="edu-description-text">
+                                <li class="edu-descrition-item">Full-time immersive program requiring 70-90hrs week</li>
+                                <li class="edu-descrition-item">Learned three full-stacks: Python/Flask, MERN, and C#/ASP.NET </li>
+                            </ul>
+                        </div>
+                     
+                </div>
+
+                <!-- {/* COLORADO TECH UNIVERSITY */} -->
+                <div class="edu-card-container">
+                    <div class="edu-card" id='ctuCard' onclick="ctuCard()">
+                        <p class="institution">Colorado Tech University <span class="year">(2017-2019)</span></p>
+                        <i class="fa fa-solid fa-chevron-down"></i>
+                    </div>
+                    
+                        <div class="edu-description eduDrop" id='ctuDrop'>
+                            <ul class="edu-description-text">
+                                <li class="edu-descrition-item">Studied cybersecurity with a concentration in computer systems security.</li>
+                                <li class="edu-descrition-item">Learned to utilize tools such as Metasploit, Wireshark, nMap, etc.</li>
+                            </ul>
+                        </div>
+                    
+                </div>
+
+
+                <!-- {/* CODECADEMY */} -->
+                <div class="edu-card-container" >
+                    <div class="edu-card" id='caCard' onclick="caCard()">
+                        <p class="institution">Codecademy</p>
+                        <i class="fa fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="edu-description eduDrop" id='caDrop'>
+                        <ul class="edu-description-text">
+                            <li class="edu-descrition-item">Primarily utilized to reinforce topics and fundamentals</li>
+                            <li class="edu-descrition-item">Have completed a range of courses including JavaScript, C#, and more</li>
+                            <!-- {/*<li class="edu-descrition-item"></li>*/} -->
+                        </ul>
+                    </div>
+
+                </div>
+
+                <span id='contact'></span>
+
+            </div>
+        </div>
+        <!-- {/* EDUCATION END */}
+
+        {/************************************************** /}
+        {/* CONTACT ME */} -->
+        <div class="section body-section">
+            <div class='section-top'>
+                <h1 class='section-title'>Contact Me</h1>
+                <p class="section-bar"></p>
+            </div>
+
+            <div class="contact-text">
+                <p class="shadow-text">Thanks for visiting!</p>
+                <p class="shadow-text">Please reach out for any opportunities or collaborations.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-card">
+                    <h1 class='card-name'>Corbin Crawford</h1>
+                    <p class="card-job">Full-Stack Developer</p>
+
+                    <ul class='card-list'>
+                        <li class='card-item'><span class='card-label'>Email:</span> Corbin.Developer@gmail.com</li>
+                        <li class='card-item'><span class='card-label'>Github:</span> CorbinDeveloper</li>
+                        <li class='card-item'><span class='card-label'>Location:</span> Colorado, USA</li>
+                    </ul>
+
+                </div>
+
+                <!-- {/* <div class="contact-social">
+
+                </div> */} -->
+            </div>
+
+        </div>
+
+
+
+        
+        <div class='mobile-icon-container'>
+            <div class="mobile-icon-block">
+                <a target_ href="https://www.github.com" class=''>  <div class="github-icon"></div>  </a>
+
+                <a target_ href="https://www.codecademy.com/profiles/corbin.developer" class=''>  <div class="code-icon"></div>  </a>
+
+                <a target_ href="https://www.linkedin.com/in/corbin-crawford" class=''>  <div class="linkedin-icon"></div>  </a>
+
+                <a target_ href="https://www.github.com" class=''>  <div class="youtube-icon"></div>  </a>
+
+                <!-- {/* <a target_ href="https://www.github.com" class='link-cover'>  <div class="twitter-icon">.</div> */} -->
+            </div>
+        </div>
+
+
+
+
+        <!-- {/************************************************** /} -->
+        <!-- {/* CREDITS */} -->
+        <footer class="credits">
+            <p> <strong>&copy;</strong>  Corbin Crawford. All Rights Reserved. </p>
+        </footer>
+
+    <!-- {/* BODY CONTENT CONTAINER */} -->
+    </div>
+
+
+    <div class='footer-container'>
+        <div class="icon-container">
+            <a target_ href="https://www.github.com" class='link-cover'>  <div class="github-icon"></div>  </a>
+
+            <a target_ href="https://www.codecademy.com/profiles/corbin.developer" class='link-cover'>  <div class="code-icon"></div>  </a>
+
+            <a target_ href="https://www.linkedin.com/in/corbin-crawford" class='link-cover'>  <div class="linkedin-icon"></div>  </a>
+
+            <a target_ href="https://www.github.com" class='link-cover'>  <div class="youtube-icon"></div>  </a>
+
+            <!-- {/* <a target_ href="https://www.github.com" class='link-cover'>  <div class="twitter-icon">.</div> */} -->
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
