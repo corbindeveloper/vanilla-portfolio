@@ -3,6 +3,7 @@ function ProjOne() {
     var c = document.getElementById("onebuzz");
     if (x.style.display !== "flex") {
         x.style.display = "flex";
+        x.style.transition = "display ease-in 2s";
         c.style.color = "var(--main)";
     } else {
         x.style.display = "none";
@@ -15,6 +16,7 @@ function ProjTwo() {
     var c = document.getElementById("twobuzz");
     if (x.style.display !== "flex") {
         x.style.display = "flex";
+        x.style.transition = "display ease-in 2s";
         c.style.color = "var(--main)";
     } else {
         x.style.display = "none";
@@ -27,6 +29,7 @@ function ProjOneMobile() {
     var c = document.getElementById("twobuzzmobile");
     if (x.style.display !== "flex") {
         x.style.display = "flex";
+        x.style.transition = "display ease-in 2s";
         c.style.color = "var(--main)";
     } else {
         x.style.display = "none";
@@ -39,6 +42,7 @@ function ProjThree() {
     var c = document.getElementById("threebuzz");
     if (x.style.display !== "flex") {
         x.style.display = "flex";
+        x.style.transition = "display ease-in 2s";
         c.style.color = "var(--main)";
     } else {
         x.style.display = "none";
@@ -51,6 +55,7 @@ function ProjThreeMobile() {
     var c = document.getElementById("threebuzzmobile");
     if (x.style.display !== "flex") {
         x.style.display = "flex";
+        x.style.transition = "display ease-in 2s";
         c.style.color = "var(--main)";
     } else {
         x.style.display = "none";
@@ -63,6 +68,7 @@ function ProjFour() {
     var c = document.getElementById("fourbuzz");
     if (x.style.display !== "flex") {
         x.style.display = "flex";
+        x.style.transition = "display ease-in 2s";
         c.style.color = "var(--main)";
     } else {
         x.style.display = "none";
@@ -80,6 +86,7 @@ function DojoCard() {
     if (x.style.display !== "block") {
         x.style.display = "block";
         x.style.width = "100%";
+        x.style.transition = "display ease-in 2s";
     } else {
         x.style.display = "none";
     }
@@ -91,6 +98,7 @@ function ctuCard() {
     if (x.style.display !== "block") {
         x.style.display = "block";
         x.style.width = "100%";
+        x.style.transition = "display ease-in 2s";
     } else {
         x.style.display = "none";
     }
@@ -102,6 +110,7 @@ function caCard() {
     if (x.style.display !== "block") {
         x.style.display = "block";
         x.style.width = "100%";
+        x.style.transition = "display ease-in 2s";
     } else {
         x.style.display = "none";
     }

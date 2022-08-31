@@ -357,6 +357,7 @@
   
   .project-card-container > .myDIV {
     display: none;
+    animation: fadeIn 2s;
   }
   
   /* .project-card:hover {
@@ -507,6 +508,8 @@
     min-width: 100%;
     padding: 0 1%;
   }
+
+  
   
   /* LEARN MORE BUZZ */
   
@@ -736,6 +739,7 @@
 
   .eduDrop {
     display: none;
+    animation: fadeIn 2s;
   }
   
   /* ========================= */
@@ -896,7 +900,15 @@
   .bottomless {
     margin-bottom: 4%;
   }
-  
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
   
   
   /* ========================= */
