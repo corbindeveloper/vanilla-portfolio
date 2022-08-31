@@ -46,6 +46,34 @@ function ProjThree() {
     }
 }
 
+function ProjThreeMobile() {
+    var x = document.getElementById("divthree-mobile");
+    var c = document.getElementById("threebuzzmobile");
+    if (x.style.display !== "flex") {
+        x.style.display = "flex";
+        c.style.color = "var(--main)";
+    } else {
+        x.style.display = "none";
+        c.style.color = "rgba(100, 100, 100, 0.6)";
+    }
+}
+
+function ProjFour() {
+    var x = document.getElementById("divfour");
+    var c = document.getElementById("fourbuzz");
+    if (x.style.display !== "flex") {
+        x.style.display = "flex";
+        c.style.color = "var(--main)";
+    } else {
+        x.style.display = "none";
+        c.style.color = "rgba(100, 100, 100, 0.6)";
+    }
+}
+
+
+
+// EDU
+
 function DojoCard() {
     var x = document.getElementById("dojoDrop");
 
