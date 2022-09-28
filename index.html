@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Corbin Crawfords</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Space+Mono&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4229a7500a.js" crossorigin="anonymous"></script>
 </head>
-<body class="App">
+<body>
 
     <!-- Fixed Header -->
     <div class="fixed-header">
@@ -96,7 +97,7 @@
 
                     <div class="about-row">
                         <div class="about-card">
-                            <p class="about-card-text">Location: &nbsp; Colorado, USA </p>
+                            <p class="about-card-text">Location: &nbsp; Oklahoma, USA </p>
                         </div>
 
                         <div class="about-card">
@@ -130,368 +131,32 @@
             
             <div class="project-container">
 
-                <!-- {/* ========================================================= */} -->
-                <!-- {/* PROJECT ONE DESKTOP */} -->
-                <div class="project-card-container desktop-project">
-
-                    <div class="project-card">
-                        
-                        
-                        <div class='image-filler dojoimg'></div>
-
-
-                        <div class="project-card-info-right">
-                            <p class="project-title">Dojoneer</p>
-                            <p class="project-description">
-                                A study dojo for users to maintain productivity! It includes a notepad, todo list that is stored in local storage, a task-timer, and lofi radio that is embed via Youtube. All components are draggable and interactive to the user.
-                            </p>
-                            <div class="proj-learn-more-container">
-                                <button id="onebuzz" class="hvr-buzz-out" onclick="ProjOne()">Learn More</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="myDIV" id="divone">
-                        <div class="project-card-dropdown">
-                            <div class="dropdown-left">
-                                <p class="dropdown-title">Technologies Utilized</p>
-                                <div class="dropdown-technologies">
-                                    <span class="technologies-pod">HTML</span>
-                                    <span class="technologies-pod">CSS3</span>
-                                    <span class="technologies-pod">React.js</span>
-                                    <span class="technologies-pod">Youtube Radio</span>
-                                    <span class="technologies-pod">AWS</span>
-                                    <span class="technologies-pod">Github Collab</span>
-                                </div>
-                            </div>
-
-                            <div class="dropdown-right">
-                                <p class="dropdown-title">Check it out</p>
-                                <div class="dropdown-project-links">
-                                    <ul class='dropdown-actions'>
-                                        <li>
-                                            <a href="https://github.com/aaronpnguyen/Dojoneer" class="hvr-icon-buzz">
-                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
-                                            </a>
-                                        </li>
-
-                                        <!-- <li>
-                                            <a href="#" class="hvr-icon-buzz">
-                                                Visit Project <i class="fa fa-solid fa-globe hvr-icon"></i>
-                                            </a>
-                                        </li> -->
-
-                                        <!-- {/* <li><a href="#DEMO">Demo</a></li> */} -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="current-project">
+                    <p class="current-project-title">What am I working on?</p>
+                    <p class="current-project-text">Just recently began working on my main project, a social platform dedicated to the plant community. When I'm not working on this I enjoy diving deeper into the Godot game engine.</p>
                 </div>
 
-                <!-- {/* ========================================================= */} -->
-                <!-- {/* PROJECT ONE MOBILE */} -->
-                <div class="project-card-container mobile-project">
-                    <div class="project-card">
+<!--                 <div class="project-row">
+                    <div class="projectTopicButton active"> All </div>
+                    <div class="topicGap"></div>
+                    <div class="projectTopicButton hvr-grow"> Web </div>
+                    <div class="topicGap"></div>
+                    <div class="projectTopicButton hvr-grow"> Games </div>
+                    <div class="topicGap"></div>
+                    <div class="projectTopicButton hvr-grow"> Email </div>
+                </div> -->
 
-                        <div class="project-card-info-left">
-                            <p class="project-title">Dojoneer</p>
+                <div class="projectIconContainer">
+                    <a href="redify.html"><div class="projectIcons" id="iconRedify" ></div></a>
+                    <a href="local-hoops.html"><div class="projectIcons" id="iconLocalHoops" ></div></a>
+                    <a href="dojoneer.html"><div class="projectIcons" id="iconDojoneer" ></div></a>
+                    <a href="urcheatsheet.html"><div class="projectIcons" id="iconCheatSheet" ></div></a>
+                    <a href="email-one.html"><div class="projectIcons" id="iconEmailOne" ></div></a>
+                    <!-- <div class="projectIcons" id="iconGameOne" onclick="gameOneModal()"></div> -->
+                    <!-- <div class="projectIcons" id="iconCars"></div> -->
+                    <!-- <div class="projectIcons" id="icon"></div> -->
 
-                            <!-- {/* IMAGE FOR PROJECT ON MOBILE*/} -->
-                            <div class="mobile-project-dojo"></div>
-
-                            <p class="project-description">
-                                A study dojo for users to maintain productivity! It includes a notepad, todo list that is stored in local storage, a task-timer, and lofi radio that is embed via Youtube. All components are draggable and interactive to the user.
-                            </p>
-                            <div class="proj-learn-more-container learn-more-left">
-                                <button id="twobuzzmobile" class="hvr-buzz-out" onclick="ProjOneMobile()"">Learn more</button>
-                            </div>
-                        </div>
-
-                        <div class='image-filler right-img dojoimg'></div>
-                    </div>
-
-                    <div class="myDIV" id="divone-mobile">
-                        <div class="project-card-dropdown">
-                            <div class="dropdown-left">
-                                <p class="dropdown-title">Technologies Utilized</p>
-                                <div class="dropdown-technologies">
-                                    <span class="technologies-pod">HTML</span>
-                                    <span class="technologies-pod">CSS3</span>
-                                    <span class="technologies-pod">React.js</span>
-                                    <span class="technologies-pod">Youtube Radio</span>
-                                    <span class="technologies-pod">AWS</span>
-                                    <span class="technologies-pod">Github Collab</span>
-                                </div>
-                            </div>
-
-                            <div class="dropdown-right">
-                                <p class="dropdown-title">Check it out</p>
-                                <div class="dropdown-project-links">
-                                    <ul class='dropdown-actions'>
-                                        <li>
-                                            <a href="https://github.com/aaronpnguyen/Dojoneer" class="hvr-icon-buzz">
-                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
-                                            </a>
-                                        </li>
-
-                                        <!-- {/* <li>
-                                            <a href="#" class="hvr-icon-buzz">
-                                                Visit Project <i class="fa fa-solid fa-globe hvr-icon"></i>
-                                            </a>
-                                        </li> */}  -->
-
-                                        <!-- {/* <li><a href="#DEMO">Demo</a></li> */} -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-
-                
-                <!-- {/* ========================================================= */} -->
-                <!-- {/* PROJECT TWO */} -->
-                <div class="project-card-container">
-                    <div class="project-card">
-
-                        <div class="project-card-info-left">
-                            <p class="project-title">Local Hoops</p>
-
-                            <!-- {/* IMAGE FOR PROJECT ON MOBILE*/} -->
-                            <div class="mobile-project-image"></div>
-
-
-                            <p class="project-description">
-                                A place for YMCA members to schedule pick-up basketball game sessions. It allows users to join others planned sessions and see who is going to be playing and the details of the session.
-                            </p>
-                            <div class="proj-learn-more-container learn-more-left">
-                                <button id="twobuzz" class="hvr-buzz-out" onclick="ProjTwo()">Learn more</button>
-                            </div>
-                        </div>
-
-                        <div class='hoopsimg right-img'></div>
-                    </div>
-
-                    <div class="myDIV" id="divtwo">
-                        <div class="project-card-dropdown">
-                            <div class="dropdown-left">
-                                <p class="dropdown-title">Technologies Utilized</p>
-                                <div class="dropdown-technologies">
-                                    <span class="technologies-pod">CSHTML</span>
-                                    <span class="technologies-pod">CSS3</span>
-                                    <span class="technologies-pod">Javascript</span>
-                                    <span class="technologies-pod">C#</span>
-                                    <span class="technologies-pod">Razor</span>
-                                    <span class="technologies-pod">ASP.NET</span>
-                                    <span class="technologies-pod">Entity Framework</span>
-                                    <span class="technologies-pod">SQL</span>
-                                    <span class="technologies-pod">AWS</span>
-                                </div>
-                            </div>
-
-                            <div class="dropdown-right">
-                                <p class="dropdown-title">Check it out</p>
-                                <div class="dropdown-project-links">
-                                    <ul class='dropdown-actions'>
-                                        <li>
-                                            <a href="https://github.com/corbindeveloper/LocalHoopsProject" class="hvr-icon-buzz">
-                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
-                                            </a>
-                                        </li>
-                                        
-                                        <!-- {/* Will be two view a small video demo, in order to run will have to put
-                                         some instructions in the ReadMe on Github */}
-
-                                        {/* <li><a href="#DEMO">Demo</a></li> */} -->
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- {/* ========================================================= */} -->
-                <!-- {/* PROJECT THREE DESKTOP */} -->
-                <div class="project-card-container desktop-project">
-
-                    <div class="project-card" id='urcs-container'>
-                        
-                        
-                        <div class='image-filler plantimg'></div>
-
-
-                        <div class="project-card-info-right">
-                            <p class="project-title">Plant Stand</p>
-                            <p class="project-description">
-                                A simple but elagant social platform for plant lovers. It allows users to create profiles, showcase their plantstand, and join in communities that are created by fellow users.
-                            </p>
-                            <div class="proj-learn-more-container">
-                                <button id="onebuzz" class="hvr-buzz-out" onclick="ProjThree()">Learn More</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="myDIV" id="divthree">
-                        <div class="project-card-dropdown">
-                            <div class="dropdown-left">
-                                <p class="dropdown-title">Technologies Utilized</p>
-                                <div class="dropdown-technologies">
-                                    <span class="technologies-pod">HTML</span>
-                                    <span class="technologies-pod">CSS3</span>
-                                    <span class="technologies-pod">Python</span>
-                                    <span class="technologies-pod">Jinja2</span>
-                                    <span class="technologies-pod">SQL</span>
-                                    <span class="technologies-pod">Flask</span>
-                                    <span class="technologies-pod">AWS</span>
-                                </div>
-                            </div>
-
-                            <div class="dropdown-right">
-                                <p class="dropdown-title">Check it out</p>
-                                <div class="dropdown-project-links">
-                                    <ul class='dropdown-actions'>
-                                        <li>
-                                            <a href="https://github.com/corbindeveloper/plant_stand" class="hvr-icon-buzz">
-                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
-                                            </a>
-                                        </li>
-
-                                        <!-- {/* <li><a href="#DEMO">Demo</a></li> */} -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- {/* ========================================================= */} -->
-                <!-- {/* PROJECT THREE MOBILE */} -->
-                <div class="project-card-container mobile-project">
-                    <div class="project-card">
-
-                        <div class="project-card-info-left">
-                            <p class="project-title">Plant Stand</p>
-
-                            <!-- {/* IMAGE FOR PROJECT ON MOBILE*/} -->
-                            <div class="mobile-project-plant"></div>
-
-                            <p class="project-description">
-                                A simple but elagant social platform for plant lovers. It allows users to create profiles, showcase their plantstand, and join in communities that are created by fellow users.
-                            </p>
-                            <div class="proj-learn-more-container learn-more-left">
-                                <button id="threebuzzmobile" class="hvr-buzz-out" onclick="ProjThreeMobile()"">Learn more</button>
-                            </div>
-                        </div>
-
-                        <div class='image-filler right-img plantimg'></div>
-                    </div>
-
-                    <div class="myDIV" id="divthree-mobile">
-                        <div class="project-card-dropdown">
-                            <div class="dropdown-left">
-                                <p class="dropdown-title">Technologies Utilized</p>
-                                <div class="dropdown-technologies">
-                                    <span class="technologies-pod">HTML</span>
-                                    <span class="technologies-pod">CSS3</span>
-                                    <span class="technologies-pod">Python</span>
-                                    <span class="technologies-pod">Jinja2</span>
-                                    <span class="technologies-pod">SQL</span>
-                                    <span class="technologies-pod">Flask</span>
-                                    <span class="technologies-pod">AWS</span>
-                                </div>
-                            </div>
-
-                            <div class="dropdown-right">
-                                <p class="dropdown-title">Check it out</p>
-                                <div class="dropdown-project-links">
-                                    <ul class='dropdown-actions'>
-                                        <li>
-                                            <a href="https://github.com/corbindeveloper/plant_stand" class="hvr-icon-buzz">
-                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
-                                            </a>
-                                        </li>
-
-                                        <!-- {/* <li>
-                                            <a href="#" class="hvr-icon-buzz">
-                                                Visit Project <i class="fa fa-solid fa-globe hvr-icon"></i>
-                                            </a>
-                                        </li> */}  -->
-
-                                        <!-- {/* <li><a href="#DEMO">Demo</a></li> */} -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- {/* ========================================================= */} -->
-                <!-- {/* PROJECT FOUR */} -->
-                <div class="project-card-container">
-                    <div class="project-card">
-
-                        <div class="project-card-info-left">
-                            <p class="project-title">UrCheatSheet</p>
-
-                            <!-- {/* IMAGE FOR PROJECT ON MOBILE*/} -->
-                            <div class="mobile-project-urcs"></div>
-
-
-                            <p class="project-description">
-                                Being rewritten in React Javascript to be a small platform to reference and understand data structures and algorithmic approaches better.
-                            </p>
-                            <div class="proj-learn-more-container learn-more-left">
-                                <button id="fourbuzz" class="hvr-buzz-out" onclick="ProjFour()">Learn more</button>
-                            </div>
-                        </div>
-
-                        <div class='image-filler right-img urcs-img'></div>
-                    </div>
-
-                    <div class="myDIV" id="divfour">
-                        <div class="project-card-dropdown">
-                            <div class="dropdown-left">
-                                <p class="dropdown-title">Technologies Utilized</p>
-                                <div class="dropdown-technologies">
-                                    <span class="technologies-pod">HTML</span>
-                                    <span class="technologies-pod">CSS3</span>
-                                    <span class="technologies-pod">Javascript</span>
-                                    <span class="technologies-pod">CodeMirror</span>
-                                    <span class="technologies-pod">Github Pages</span>
-                                </div>
-                            </div>
-
-                            <div class="dropdown-right">
-                                <p class="dropdown-title">Check it out</p>
-                                <div class="dropdown-project-links">
-                                    <ul class='dropdown-actions'>
-                                        <li>
-                                            <a href="https://www.github.com/corbindeveloper" class="hvr-icon-buzz">
-                                                View on Github <i class="fa fa-brands fa-github hvr-icon"></i>
-                                            </a>
-                                        </li>
-
-                                        <!-- {/* <li>
-                                            <a href="#" class="hvr-icon-buzz">
-                                                Visit Project <i class="fa fa-solid fa-globe hvr-icon"></i>
-                                            </a>
-                                        </li> */} -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
 
 
                 <!-- {/* Edu ID for scroll */} -->

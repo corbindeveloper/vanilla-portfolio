@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Corbin Crawfords</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4229a7500a.js" crossorigin="anonymous"></script>
+</head>
+<body class="App" id="project-body">
+
+	<div class="project-btn-container">
+		<div class="project-btn">
+			<a href="index.html">Back Home</a>
+		</div>
+		<div class="project-btn">
+			<a href="https://github.com/corbindeveloper/urCheatSheet-v1">View on Github</a>
+		</div>
+	</div>
+
+	<!-- SLIDESHOW -->
+    <div class="slideshow-container">
+	    <div class="slideshow" id="dojo-slideshow">
+
+	    	<!-- Arrow Left -->
+	        <div class="gallery-arrow gallery-left">    
+	            <i class="fa-solid fa-circle-chevron-left img-chevron modal-left" onclick="cheatSheetImagesGallery('left')"></i>
+	        </div>
+
+	        <!-- Main Image -->
+	        <div class="main-image-container">
+	           <img class="main-image" id="cheatSheetGallery" src="./assets/cheatsheet-photos/home.png" alt="main-image">
+	        </div>
+
+	        <!-- Arrow Right -->
+	        <div class="gallery-arrow gallery-right">
+	            <i class="fa-solid fa-circle-chevron-right img-chevron modal-right" onclick="cheatSheetImagesGallery('right')"></i>                
+	        </div>
+
+	    </div>
+    </div>
+
+
+    <!-- Mobile Image Slider -->
+    <div class="mobile-slider">
+    	<div class="mobile-arrow gallery-left">    
+            <i class="fa-solid fa-circle-chevron-left img-chevron modal-left" onclick="cheatSheetImagesGallery('left')"></i>
+        </div>
+    	<div class="mobile-arrow gallery-right">
+            <i class="fa-solid fa-circle-chevron-right img-chevron modal-right" onclick="cheatSheetImagesGallery('right')"></i>                
+        </div>
+    </div>
+
+    <div class="proj-title-container">
+    	<p class="proj-title">urCheatSheet &nbsp; &nbsp;<span class="proj-with">IN DEVELOPMENT</span></p>
+    </div>
+
+
+    <div class="text-langs-container">
+        <p class="text-langs">HTML</p>
+        <p class="text-langs">CSS</p>
+        <p class="text-langs">Javascript</p>
+        <p class="text-langs">CodeMirror</p>
+        <p class="text-langs">Figma</p>
+    </div>
+
+
+    <div class="proj-text-description">
+        <p class="proj-text">Being a bootcamp graduate myself many of my cohort mates were struggling with understanding data structures given the pace of the bootcamp. urCheatSheet is the place to get the beginning grasp of important data structures. Leaving urCheatSheet users should feel much more confident on platforms such as LeetCode. <br><span class="proj-with">Currently being restyled and cleaned up.</span></p>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
