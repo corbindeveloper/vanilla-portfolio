@@ -10,17 +10,17 @@ let redifyModal = () => {
 let redifyImages = [];
 let i = 0;
 
-redifyImages[0] = './assets/redify-photos/Home.png';
-redifyImages[1] = './assets/redify-photos/create_topic.png';
-redifyImages[2] = './assets/redify-photos/create_post.png';
-redifyImages[3] = './assets/redify-photos/post_card.png';
-redifyImages[4] = './assets/redify-photos/darkmode.png';
+redifyImages[0] = './assets/redify-photos/newHome.png';
+redifyImages[1] = './assets/redify-photos/new_createTopic.png';
+redifyImages[2] = './assets/redify-photos/new_createPost.png';
+redifyImages[3] = './assets/redify-photos/new_viewPost.png';
+redifyImages[4] = './assets/redify-photos/new_darkMode.png';
 redifyImages[5] = './assets/redify-photos/comment.png';
 redifyImages[6] = './assets/redify-photos/comment_appear.png';
-redifyImages[7] = './assets/redify-photos/view_topic.png';
-redifyImages[8] = './assets/redify-photos/profile.png';
-redifyImages[9] = './assets/redify-photos/stats.png';
-redifyImages[10] = './assets/redify-photos/settings.png';
+redifyImages[7] = './assets/redify-photos/new_viewTopic.png';
+redifyImages[8] = './assets/redify-photos/new_viewProfile.png';
+redifyImages[9] = './assets/redify-photos/new_viewStats.png';
+redifyImages[10] = './assets/redify-photos/new_viewSettings.png';
 redifyImages[11] = './assets/redify-photos/sign_in.png';
 redifyImages[12] = './assets/redify-photos/register.png';
 // redifyImages[13] = './assets/redify-photos/playlist_card.png';
