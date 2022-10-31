@@ -22,27 +22,27 @@
 
 			<a href="index.html" class="project-btn hvr-grow-rotate">Back Home</a>
 
-			<a href="https://github.com/corbindeveloper/LocalHoopsProject" class="project-btn hvr-grow-rotate">View on Github</a>
+			<!-- <a href="#SIMPLYSHOWCASEDLINKHERE" class="project-btn hvr-grow-rotate">Check it out</a> -->
 
 	</div>
 
 	<!-- SLIDESHOW -->
     <div class="slideshow-container">
-	    <div class="slideshow">
+	    <div class="slideshow" id="dojo-slideshow">
 
 	    	<!-- Arrow Left -->
 	        <div class="gallery-arrow gallery-left">    
-	            <i class="fa-solid fa-circle-chevron-left img-chevron modal-left" onclick="localHoopsImages('left')"></i>
+	            <i class="fa-solid fa-circle-chevron-left img-chevron modal-left" onclick="showcaseImagesGallery('left')"></i>
 	        </div>
 
 	        <!-- Main Image -->
 	        <div class="main-image-container">
-	           <img class="main-image" id="hoopsGallery" src="./assets/hoops-photos/home.png" alt="main-image">
+	           <img class="main-image" id="showcaseGallery" src="./assets/showcase-photos/landing.png" alt="main-image">
 	        </div>
 
 	        <!-- Arrow Right -->
 	        <div class="gallery-arrow gallery-right">
-	            <i class="fa-solid fa-circle-chevron-right img-chevron modal-right" onclick="localHoopsImages('right')"></i>                
+	            <i class="fa-solid fa-circle-chevron-right img-chevron modal-right" onclick="showcaseImagesGallery('right')"></i>                
 	        </div>
 
 	    </div>
@@ -52,10 +52,10 @@
     <!-- Mobile Image Slider -->
     <div class="mobile-slider">
     	<div class="mobile-arrow gallery-left">    
-            <i class="fa-solid fa-circle-chevron-left img-chevron modal-left" onclick="localHoopsImages('left')"></i>
+            <i class="fa-solid fa-circle-chevron-left img-chevron modal-left" onclick="showcaseImagesGallery('left')"></i>
         </div>
     	<div class="mobile-arrow gallery-right">
-            <i class="fa-solid fa-circle-chevron-right img-chevron modal-right" onclick="localHoopsImages('right')"></i>                
+            <i class="fa-solid fa-circle-chevron-right img-chevron modal-right" onclick="showcaseImagesGallery('right')"></i>                
         </div>
     </div>
 
@@ -65,21 +65,19 @@
         <p class="text-langs">Javascript</p>
         <p class="text-langs">C#</p>
         <p class="text-langs">ASP.NET</p>
-        <p class="text-langs">Entity Framework</p>
-        <p class="text-langs">Razor</p>
-        <p class="text-langs">SQL</p>
-        <p class="text-langs">Figma</p>
+        <p class="text-langs">EntityFramework</p>
+        <p class="text-langs">Razor Engine</p>
+        <p class="text-langs">Google Analytics</p>
+        <p class="text-langs">Stripe API</p>
+        <p class="text-langs">MySQL</p>
+        <p class="text-langs">AWS</p>
     </div>
 
     <div class="proj-title-container">
-    	<p class="proj-title">Local Hoops &nbsp; &nbsp;<span class="proj-with"></span></p>
-        <p class="proj-text">A place for YMCA members to see gym activity! Allows members to create accounts, reserve the gym, join gym reservations and see the details of what is taking place and when. Overall a small project to demonstrate capabilities with C#/ASP.NET.</p>
+    	<p class="proj-title">Simply Showcased &nbsp; <span class="proj-with">IN DEVELOPMENT</span></p>
+        <p class="proj-text">Simply Showcased provides developers, designers and more with a place to showcase their work, get contacted for freelancing and much more! </p>
+        
     </div>
-
-<!-- 
-    <div class="proj-text-description">
-        <p class="proj-text">A place for YMCA members to see gym activity! Allows members to create accounts, reserve the gym, join gym reservations and see the details of what is taking place and when. Overall a small project to demonstrate capabilities with C#/ASP.NET.</p>
-    </div> -->
 
 <script src="main.js"></script>
 </body>

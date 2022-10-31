@@ -23,6 +23,17 @@
 	overflow-x: hidden;
 }
 
+#project-body-purple {
+	background: url('./assets/Sprinkle-purple.svg');
+	background-position: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100%;
+	min-width: 100%;
+	overflow-x: hidden;
+}
+
 .project-btn-container {
 	display: flex;
 	justify-content: space-between;
